@@ -18,18 +18,22 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
+    /*border:2px solid blue;*/
+    max-width: 100%;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +54,43 @@ table {
 * {
     box-sizing: border-box;
 }
-
+/* */
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+
+.main div{
+    display:flex;
+    align-items: center;
+    
+    
+}
+
+.main nav {width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+            margin-top: 4%
+            
+            
+            
+
+}
+
+.main nav a{width: 30%;
+   
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    
+    
+}
+
+.main img{
+    padding:2%
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,6 +106,9 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+    
+    
+    
 }
 
 .top-content {
@@ -88,6 +128,50 @@ p {
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+
+/*about content*/
+
+.part1{flex-direction: row;
+        display:flex;
+        justify-content: space-between;
+        padding: 5% 0;
+        
+}
+
+.part1 div{ width: 47%;
+            border-bottom: 2px dashed black;
+            padding-bottom: 3%;
+            
+           
+
+}
+
+.part1 a{ border:3px solid black;
+        padding:8px;
+        border-radius:10px;
+        margin: 8%;
+
+}
+
+.part2{flex-direction: row;
+    display:flex;
+    justify-content: space-between;
+    padding: 5% 0;
+
+}
+
+.part2 div{ width: 47%;
+    border-bottom: 2px dashed black;
+    padding-bottom: 3%;
+       
+
+}
+
+.part2 a{ border:3px solid black;
+    padding:8px;
+    border-radius:10px;
+
 }
 
 .middle-content h2 {
@@ -112,6 +196,44 @@ p {
     justify-content: center;
 }
 
+#box1{ background-color: teal;
+
+}
+
+#box2{ background-color: gold;
+    
+}
+
+#box3{background-color: cadetblue;
+    
+}
+
+#box4{background-color:coral;
+    
+}
+
+#box5{ background-color:crimson;
+    
+}
+
+#box6{background-color:forestgreen;
+    
+}
+#box7{background-color:darkorchid
+    
+}
+
+#box8{background-color:hotpink;
+    
+}
+
+#box9{background-color:indigo;
+    
+}
+
+#box10{background-color:dodgerblue;
+    
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
